@@ -4,7 +4,7 @@ const questions = [
     name: 'type',
     message: 'Choose the type of the commit:',
     choices: ['chore', 'docs', 'feat', 'fix', 'refactor', 'style', 'test'],
-    default: 'Bug'
+    default: 'fix'
   },
 
   {
