@@ -3,14 +3,14 @@ import test from 'ava'
 const questions = require('./src/questions')
 const getCommit = require('./src/getCommit')
 
-test('Lista de opções de commit', t => {
+test('Nome da lista de commits', t => {
   const message = questions[0].name
   const result = 'type'
   
   t.is(message, result);
 });
 
-test('Lista de opções de commit', t => {
+test('Lista de opções de commits', t => {
   const message = questions[0].type
   const result = 'list'
   
@@ -24,7 +24,7 @@ test('formato de escolhas dos commits', t => {
   t.is(message, result);
 });
 
-test('Lista de opções de commit', t => {
+test('Nome do input que recebe a mensagem do commit', t => {
   const message = questions[1].name
   const result = 'message'
   
