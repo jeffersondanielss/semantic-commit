@@ -4,20 +4,19 @@
 
 ## Install
 
-Clone o repositório
+Clone the repository
 ```bash
-  $ git clone git@github.com:jeffersondanielss/semantic-commit.git
+$ git clone git@github.com:jeffersondanielss/semantic-commit.git
 ```
 
-Entre na pasta do repositório
+Enter the repository folder
 ```bash
-  $ cd semantic-commit
+$ cd semantic-commit
 ```
 
-Instale globalmente
-
+Install Globally
 ```bash
-  $ npm i -g
+$ npm i -g
 ```
 
 #### Disclaimer
