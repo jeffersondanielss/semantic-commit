@@ -2,7 +2,7 @@ const questions = [
   {
     type: 'list',
     name: 'type',
-    message: 'Escolha o tipo do commit:',
+    message: 'Choose the type of the commit:',
     choices: ['chore', 'docs', 'feat', 'fix', 'refactor', 'style', 'test'],
     default: 'Bug'
   },
@@ -10,7 +10,7 @@ const questions = [
   {
     type: 'input',
     name: 'message',
-    message: 'Escreva a mensagem do seu commit:'
+    message: 'Write the commit message:'
   }
   
 ]
