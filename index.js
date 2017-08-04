@@ -2,13 +2,8 @@
 
 'use strict'
 
-const inquirer = require('inquirer')
-const commitMessage = require('./src/commitMessage')
-const questions = require('./src/questions')
+const help = require('./src/help')
+const commit = require('./src/commit')
+const arg = process.argv.slice(2,3).toString()
 
-inquirer
-  .prompt(questions)
-  .then(
-    answers => commitMessage(answers.type, answers.message),
-    err => console.log('Error: ', err)
-  )
+arg ? help() : commit()
