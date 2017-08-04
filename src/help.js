@@ -1,4 +1,5 @@
-const help = () => console.log(`
+const help = () =>
+  console.log(`
   - SEMANTIC COMMIT -
   --------------------------------------------------------------------------  
 

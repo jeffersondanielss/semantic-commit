@@ -12,7 +12,6 @@ const questions = [
     name: 'message',
     message: 'Write the commit message:'
   }
-  
 ]
 
 module.exports = questions
