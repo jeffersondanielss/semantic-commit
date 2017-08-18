@@ -4,9 +4,7 @@ const getCommit = require('./getCommit')
 const commitMessage = (type, message) => {
   const commit = getCommit(type, message)
 
-  exec(commit, function(error, stdout, stderr) {
-    console.log(stdout)
-  })
+  exec(commit, (error, stdout, stderr) => console.log(stdout))
 }
 
 module.exports = commitMessage

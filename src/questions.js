@@ -1,4 +1,4 @@
-const questions = [
+const en = [
   {
     type: 'list',
     name: 'type',
@@ -14,4 +14,20 @@ const questions = [
   }
 ]
 
-module.exports = questions
+const pt = [
+  {
+    type: 'list',
+    name: 'type',
+    message: 'Escolha o tipo do commit:',
+    choices: ['tarefa', 'documentação', 'funcionalidade', 'correção', 'refatoração', 'estilo', 'teste'],
+    default: 'correção'
+  },
+
+  {
+    type: 'input',
+    name: 'message',
+    message: 'Escreva a mensagem do commit:'
+  }
+]
+
+module.exports = { pt, en }

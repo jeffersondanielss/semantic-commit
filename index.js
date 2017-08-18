@@ -2,8 +2,8 @@
 
 'use strict'
 
-const help = require('./src/help')
 const commit = require('./src/commit')
+const resolveArgs = require('./src/resolveArgs')
 const arg = process.argv.slice(2, 3).toString()
 
-arg ? help() : commit()
+arg ? resolveArgs(arg) : commit()

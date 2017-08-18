@@ -1,5 +1,4 @@
-const help = () =>
-  console.log(`
+const help = () => `
   - SEMANTIC COMMIT -
   --------------------------------------------------------------------------  
 
@@ -18,7 +17,8 @@ const help = () =>
   Commands
     - semantic-commit
     - semantic-commit --help
-
-`)
+    - semantic-commit --version
+    - semantic-commit --pt
+`
 
 module.exports = help

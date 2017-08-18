@@ -1,7 +1,8 @@
-import test from 'ava'
-
+const test = require('ava')
 const questions = require('./src/questions')
 const getCommit = require('./src/getCommit')
+const { exec } = require('child_process')
+const help = require('./src/help')
 
 test('Nome da lista de commits', t => {
   let message = questions[0].name
@@ -37,3 +38,7 @@ test('Retornando tipo e mensagem do usuário em um comando', t => {
   
   t.is(message, result);
 });
+
+test.todo('Retorna versão do projeto')
+test.todo('Retorna ajuda caso usuário digite um comando inválido')
+test.todo('Retorna ajuda caso usuário digite o comando --help')
