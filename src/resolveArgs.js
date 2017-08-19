@@ -1,11 +1,11 @@
 const help = require('./help')()
-const getVersion = require('./getVersion')
+const version = require('./getVersion')()
 const commit = require('./commit')
 
 const resolveArgs = arg => {
   switch (arg) {
     case '--version':
-      getVersion()
+      console.log(version)
       break
 
     case '--pt':
