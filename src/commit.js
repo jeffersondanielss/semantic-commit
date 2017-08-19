@@ -1,12 +1,12 @@
 const inquirer = require('inquirer')
 const commitMessage = require('./commitMessage')
-const questions = require('./questions')
+const { pt, en } = require('./questions')
 
 const commit = lang => {
   inquirer
-    .prompt(lang ? questions.pt : questions.en)
+    .prompt(lang ? pt : en)
     .then(
-      answers => commitMessage(answers.type, answers.message),
+      ({ type, message }) => commitMessage(type, message),
       err => console.log('Error: ', err)
     )
 }
