@@ -1,5 +1,7 @@
 # Semantic Commit cli
 
+[![Build Status](https://travis-ci.org/jeffersondanielss/semantic-commit.svg?branch=master)](https://travis-ci.org/jeffersondanielss/semantic-commit)
+
 <center>
   <img src="preview.gif" alt="how use preview">
 </center>
