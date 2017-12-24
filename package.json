@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^3.2.1"
+    "inquirer": "3.2.1"
   },
   "scripts": {
     "test": "ava -v"
   },
   "devDependencies": {
-    "ava": "^0.21.0"
+    "ava": "0.21.0"
   },
   "bin": {
     "semantic-commit": "index.js"

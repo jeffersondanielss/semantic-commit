@@ -18,19 +18,9 @@ feat: add hat wobble
 
 ## How install ?
 
-Clone the repository
-```bash
-$ git clone git@github.com:jeffersondanielss/semantic-commit.git
-```
-
-Enter the repository folder
-```bash
-$ cd semantic-commit
-```
-
 Install Globally
 ```bash
-$ npm i -g
+$ npm i -g semantic-commit
 ```
 
 ## Options ?
