@@ -6,7 +6,8 @@
 
 ## What is it?
 
-I use a rigid [commit](https://seesparkbox.com/foundry/semantic_commit_messages) message format, and it makes me a better programmer.
+A rigid [commit](https://seesparkbox.com/foundry/semantic_commit_messages) message format.
+
 ```
 feat: add hat wobble
 ^--^  ^------------^
