@@ -1,0 +1,31 @@
+.section {
+  flex-direction: row;
+  display: flex;
+  margin: 150px 0;
+}
+
+.section__text {
+  text-align: right;
+}
+
+.section__text,
+.section__terminal {
+  width: 49%;
+  flex-wrap: wrap;
+  margin: 0 2%;
+  height: 100%;
+}
+
+.section__text--right {
+  order: 1;
+  text-align: left;
+}
+
+.section__terminal--right {
+  flex-wrap: wrap;
+}
+
+.section__title {
+  order: 0;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "semantic-commit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeffersondanielss/semantic-commit.git",
+  "author": "Jefferson Daniel <jeffersondanielss@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "http-server ./"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "parcel-bundler": "^1.3.1"
+  }
+}

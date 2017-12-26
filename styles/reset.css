@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}

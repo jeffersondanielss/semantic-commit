@@ -1,0 +1,73 @@
+.window {
+  font-family: "Proxima Nova", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0 auto 2rem;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 0.25rem 0.5rem #3e3e3e;
+  border-radius: 5px;
+  background: #191919;
+}
+
+.bar {
+  height: 36px;
+}
+
+.btn, .btn::before, .btn::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: block;
+}
+
+.btn {
+  background: #f6b73e;
+  position: relative;
+  margin-left: 38px;
+  top: 12px;
+}
+.btn::before, .btn::after {
+  content: " ";
+  position: absolute;
+}
+.btn::before {
+  background: #f55551;
+  margin-left: -20px;
+}
+.btn::after {
+  background: #32c146;
+  margin-left: 20px;
+}
+
+.body {
+  padding: 18px;
+}
+
+.body pre {
+  margin: 0;
+}
+
+.command {
+  color: #32c146;
+}
+
+.selected {
+  color: aqua;
+}
+
+.prompt {
+  margin-bottom: 3px;
+}
+
+.comment {
+  opacity: 0.5;
+}
+
+.hash {
+  color: goldenrod;
+}
+
+.tag {
+  color: yellow;
+}

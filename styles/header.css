@@ -1,0 +1,15 @@
+.header {
+  background: #aaa;
+  position: relative;
+  margin-bottom: 100px;
+  color: #FFF;
+  text-align: center;
+}
+
+.header__title {
+  padding: 150px 0 0;
+}
+
+.header__description {
+  padding: 0 0 150px;
+}
