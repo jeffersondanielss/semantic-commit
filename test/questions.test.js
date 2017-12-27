@@ -1,11 +1,5 @@
 const test = require('ava')
-const path = require('path')
-const { exec } = require('child_process')
-const pkg = require(path.join(__dirname, './package.json'))
-
-const help = require('./src/help')
-const {pt, en} = require('./src/questions')
-const getCommit = require('./src/getCommit')
+const {pt, en} = require('../src/questions')
 
 test('Nome da lista de commits', t => {
   let message = en[0].name
@@ -42,19 +36,3 @@ test('Nome do input que recebe a mensagem do commit', t => {
   t.is(message, result);
   t.is(messagePt, result);
 });
-
-test('Retornando tipo e mensagem do usuário em um comando', t => {
-  let message = getCommit('feat', 'mensagem digitada pelo usuário')
-  let result = 'git commit -m "feat: mensagem digitada pelo usuário"'
-  
-  t.is(message, result);
-});
-
-test('Retorna versão do projeto', t => {
-  let version = require('./src/getVersion')()
-  let result = pkg.version
-
-  t.is(version, result);
-})
-
-test.todo('Filtro de parâmetros passados')
