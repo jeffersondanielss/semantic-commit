@@ -1,15 +1,21 @@
 .header {
-  background: #aaa;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41B6F1+0,199683+100 */
+  background: #41B6F1; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #41B6F1 0%, #199683 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #41B6F1 0%,#199683 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #41B6F1 0%,#199683 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41B6F1', endColorstr='#199683',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   position: relative;
   margin-bottom: 100px;
   color: #FFF;
   text-align: center;
+  padding: 150px 0;
 }
 
 .header__title {
-  padding: 150px 0 0;
+  margin-bottom: 3px;
 }
 
 .header__description {
-  padding: 0 0 150px;
+  margin-bottom: 20px;
 }

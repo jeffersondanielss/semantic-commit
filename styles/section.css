@@ -6,6 +6,7 @@
 
 .section__text {
   text-align: right;
+  align-self: center;
 }
 
 .section__text,
@@ -13,7 +14,6 @@
   width: 49%;
   flex-wrap: wrap;
   margin: 0 2%;
-  height: 100%;
 }
 
 .section__text--right {
@@ -21,11 +21,7 @@
   text-align: left;
 }
 
-.section__terminal--right {
-  flex-wrap: wrap;
-}
-
 .section__title {
+  margin-bottom: 10px;
   order: 0;
-  margin-bottom: 20px;
 }
