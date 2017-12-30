@@ -8,10 +8,11 @@
     "inquirer": "3.2.1"
   },
   "scripts": {
-    "test": "ava -v"
+    "test": "nyc ava -v"
   },
   "devDependencies": {
-    "ava": "0.21.0"
+    "ava": "0.21.0",
+    "nyc": "^11.4.1"
   },
   "bin": {
     "semantic-commit": "index.js"
