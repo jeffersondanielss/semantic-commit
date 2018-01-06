@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-'use strict'
+// @flow
 
-const commit = require('./src/commit')
-const resolveArgs = require('./src/resolveArgs')
-const arg = process.argv.slice(2, 3).toString()
+const commit = require('./lib/commit')
+const { args, resolveArgs } = require('./lib/resolveArgs')
 
-arg ? resolveArgs(arg) : commit()
+args
+  ? resolveArgs(args)
+  : commit()

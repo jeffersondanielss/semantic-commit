@@ -1,3 +1,12 @@
-const getCommit = (type, message) => `git commit -m "${type}: ${message}"`
+// @flow
+
+/**
+ * Create the commit command in git
+ * 
+ * @returns {string}
+ */
+
+const getCommit = (type: string, message: string) =>
+  `git commit -m "${type}: ${message}"`
 
 module.exports = getCommit

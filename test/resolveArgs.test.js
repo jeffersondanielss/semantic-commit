@@ -1,5 +1,5 @@
 const test = require('ava')
-const resolveArgs = require('../src/resolveArgs')
+const { resolveArgs } = require('../lib/resolveArgs')
 
 test('resolveArgs é uma função', t => {
   let fn = typeof resolveArgs

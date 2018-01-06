@@ -1,5 +1,13 @@
+// @flow
+
 const path = require('path')
-const pkg = require(path.join(__dirname, '../package.json'))
+const pkg = require('../package.json')
+
+/**
+ * Displays the lib version
+ * 
+ * @returns {string}
+ */
 
 const getVersion = () => pkg.version
 

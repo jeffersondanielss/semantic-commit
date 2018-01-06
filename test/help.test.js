@@ -1,5 +1,5 @@
 const test = require('ava')
-const help = require('../src/help')
+const help = require('../lib/help')
 
 test('Help é uma função', t => {
   let fn = typeof help

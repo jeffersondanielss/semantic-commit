@@ -1,8 +1,14 @@
+// @flow
+
 const inquirer = require('inquirer')
 const commitMessage = require('./commitMessage')
 const { pt, en } = require('./questions')
 
-const commit = lang => {
+/**
+ * Question the user the type and message of the commit and execute it
+ */
+
+const commit = (lang: string) => {
   inquirer
     .prompt(lang ? pt : en)
     .then(

@@ -1,5 +1,5 @@
 const test = require('ava')
-const {pt, en} = require('../src/questions')
+const {pt, en} = require('../lib/questions')
 
 test('Nome da lista de commits', t => {
   let message = en[0].name
