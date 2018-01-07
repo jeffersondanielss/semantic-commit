@@ -10,7 +10,8 @@
   "scripts": {
     "build": "babel src/ -d lib/",
     "type": "yarn flow status",
-    "test": "nyc ava -v"
+    "test": "nyc ava -v",
+    "doctor": "yarn build && yarn type && yarn test"
   },
   "devDependencies": {
     "ava": "0.21.0",

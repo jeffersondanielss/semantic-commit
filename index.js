@@ -2,9 +2,10 @@
 
 // @flow
 
-const commit = require('./lib/commit')
+const log = require('./lib/log')
+const semanticCommit = require('./lib/semanticCommit')
 const { args, resolveArgs } = require('./lib/resolveArgs')
 
 args
   ? resolveArgs(args)
-  : commit()
+  : log(semanticCommit)

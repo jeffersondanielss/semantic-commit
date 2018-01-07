@@ -2,11 +2,10 @@
 
 /**
  * Displays user help message
- * 
- * @returns {string}
+ *
  */
 
-const help = () => `
+const help = (): string => `
   - SEMANTIC COMMIT -
   --------------------------------------------------------------------------  
 
@@ -24,8 +23,8 @@ const help = () => `
 
   Commands
     - semantic-commit
-    - semantic-commit --help
-    - semantic-commit --version
+    - semantic-commit --help, -h
+    - semantic-commit --version, -v
     - semantic-commit --pt
 `
 

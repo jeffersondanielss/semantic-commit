@@ -1,15 +1,16 @@
 // @flow
 
+const log = require('./log')
 const help = require('./help')()
 const version = require('./getVersion')()
-const commit = require('./commit')
+const semanticCommit = require('./semanticCommit')
 const args = process.argv.slice(2, 3).toString()
 
 /**
  * Filters the arguments passed by the user
  */
 
-const resolveArgs = (arg: string = args) => {
+const resolveArgs = (arg: string = args): void => {
   switch (arg) {
     case '--version':
     case '-v':
@@ -17,11 +18,12 @@ const resolveArgs = (arg: string = args) => {
       break
 
     case '--pt':
-      commit(arg)
+      log(semanticCommit, arg)
       break
 
     default:
       console.log(help)
+      break
   }
 }
 

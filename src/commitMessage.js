@@ -1,16 +1,12 @@
 //@flow
 
-const { exec } = require('child_process')
-const getCommit = require('./getCommit')
+const { execSync } = require('child_process')
 
 /**
  * Log the commit message in git
  */
 
-const commitMessage = (type: string, message: string) => {
-  const commit = getCommit(type, message)
-
-  exec(commit, (error, stdout, stderr) => console.log(stdout))
-}
+const commitMessage = (commit: string): string =>
+  execSync(commit).toString()
 
 module.exports = commitMessage

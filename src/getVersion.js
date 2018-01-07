@@ -5,10 +5,10 @@ const pkg = require('../package.json')
 
 /**
  * Displays the lib version
- * 
- * @returns {string}
+ *
  */
 
-const getVersion = () => pkg.version
+const getVersion = (): string =>
+  pkg.version
 
 module.exports = getVersion
