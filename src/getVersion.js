@@ -8,7 +8,7 @@ const pkg = require('../package.json')
  *
  */
 
-const getVersion = (): string =>
-  pkg.version
+const getVersion = (): Promise<string> =>
+  Promise.resolve( pkg.version )
 
 module.exports = getVersion

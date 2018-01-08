@@ -10,8 +10,8 @@ const commitMessage = require('./commitMessage')
  */
 
 const semanticCommit = async (lang?: string): Promise<string> => {
-  const {type, message} = await answers(lang)
-  const commit = await getCommit(type, message)
+  const answer = await answers(lang)
+  const commit = await getCommit(answer)
   const stdout = await commitMessage(commit)
 
   return stdout

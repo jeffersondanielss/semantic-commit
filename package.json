@@ -8,7 +8,7 @@
     "inquirer": "3.2.1"
   },
   "scripts": {
-    "build": "babel src/ -d lib/",
+    "build": "babel src/ -d lib/ --no-comments",
     "type": "yarn flow status",
     "test": "nyc ava -v",
     "doctor": "yarn build && yarn type && yarn test"

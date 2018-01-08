@@ -1,8 +1,8 @@
 // @flow
 
 const log = require('./log')
-const help = require('./help')()
-const version = require('./getVersion')()
+const help = require('./help')
+const version = require('./getVersion')
 const semanticCommit = require('./semanticCommit')
 const args = process.argv.slice(2, 3).toString()
 
@@ -10,20 +10,17 @@ const args = process.argv.slice(2, 3).toString()
  * Filters the arguments passed by the user
  */
 
-const resolveArgs = (arg: string = args): void => {
+const resolveArgs = (arg: string = args): Promise<string> => {
   switch (arg) {
     case '--version':
     case '-v':
-      console.log(version)
-      break
+      return version()
 
     case '--pt':
-      log(semanticCommit, arg)
-      break
+      return semanticCommit(args)
 
     default:
-      console.log(help)
-      break
+      return help()
   }
 }
 
