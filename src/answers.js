@@ -7,19 +7,14 @@ const { pt, en } = require('./questions')
  * Question the user the type and message of the commit and execute it
  */
 
+
 type commit = {
   type: string,
   message: string
 }
 
 const answers = (lang?: string): Promise<commit> =>
-  new Promise((resolve, reject) => {
-    inquirer
-      .prompt(lang ? pt : en)
-      .then(
-        resp => resolve(resp),
-        err => reject(err)
-      )
-  })
+  inquirer
+    .prompt(lang ? pt : en)
 
 module.exports = answers
