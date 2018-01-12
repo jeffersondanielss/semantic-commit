@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "babel src/ -d lib/ --no-comments",
-    "type": "yarn flow status",
+    "type": "npx flow status",
     "test": "nyc ava -v",
-    "doctor": "yarn build && yarn type && yarn test"
+    "doctor": "npm run build && npm run type && npm run test"
   },
   "devDependencies": {
     "ava": "0.21.0",
