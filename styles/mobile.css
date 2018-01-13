@@ -1,0 +1,27 @@
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header__description {
+    margin: 20px;
+  }
+  
+  .section {
+    display: block;
+  }
+
+  .section__text {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .section__text,
+  .section__terminal {
+    width: 100%;
+  }
+
+  .section__terminal .window {
+    overflow-x: scroll;
+  }
+}
