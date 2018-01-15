@@ -1,7 +1,10 @@
 // @flow
 
 /**
- * Display value of Promise
+ * transforma o buffer erro em string
+ * 
+ * @param {object} err - Erro retornado pela promise
+ * @returns {void}
  */
 
 const logError = (err: Object): void => {

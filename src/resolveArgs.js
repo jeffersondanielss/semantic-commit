@@ -8,6 +8,9 @@ const args = process.argv.slice(2, 3).toString()
 
 /**
  * Filters the arguments passed by the user
+ * 
+ * @param {args} string
+ * @returns {promise}
  */
 
 const resolveArgs = (arg: string = args): Promise<string> => {

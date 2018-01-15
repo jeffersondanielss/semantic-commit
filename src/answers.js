@@ -4,7 +4,10 @@ const inquirer = require('inquirer')
 const { pt, en } = require('./questions')
 
 /**
- * Question the user the type and message of the commit and execute it
+ * Recebe o tipo de commit e uma mensagem do usuário
+ * 
+ * @param {string} lang - Linguagem usada
+ * @return {Promise} tipo de commit e uma mensagem
  */
 
 

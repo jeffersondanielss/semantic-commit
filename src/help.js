@@ -3,6 +3,7 @@
 /**
  * Displays user help message
  *
+ * @returns {promise} mensagem de ajuda para o usuário
  */
 
 const help = (): Promise<string> =>

@@ -5,7 +5,8 @@ const pkg = require('../package.json')
 
 /**
  * Displays the lib version
- *
+ * 
+ * @returns {Promise} versão atual da cli
  */
 
 const getVersion = (): Promise<string> =>

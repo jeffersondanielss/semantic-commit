@@ -6,7 +6,10 @@ const getCommit = require('./getCommit')
 const commitMessage = require('./commitMessage')
 
 /**
- * Question the user the type and message of the commit and execute it
+ * Pergunta ao usuário tipo e mensagem e gera um novo commit.
+ * 
+ * @param {string} lang - linguagem a ser exibida
+ * @returns {Promise} output do commit no git
  */
 
 const semanticCommit = async (lang?: string): Promise<string> => {
