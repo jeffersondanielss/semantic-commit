@@ -1,0 +1,12 @@
+{
+  "source": {
+    "include": ["./lib", "./package.json", "./README.md"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./documentation/",
+    "template": "node_modules/minami"
+  }
+}
